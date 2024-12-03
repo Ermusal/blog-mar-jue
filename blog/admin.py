@@ -8,12 +8,14 @@ class PublicationAdmin(admin.ModelAdmin):
         "author",
     )
     list_filter = (
-        "author",
         "title",
+        "author",       
     )     
+    
     search_fields = (
         "title",
-        "author",
+        "body",
+        "author__username",
     )
 
 
