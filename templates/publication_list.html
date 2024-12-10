@@ -3,7 +3,7 @@
 {% block content %}
     <ul>
         {% for item in publication_list %}
-            <li><a href="">{{item.title}}</a></li>
+            <li><a href="{% url 'publication_deteail' item.pk %}">{{ item.title }}</a></li>
         {% endfor %}
     </ul>
 {% endblock content %}
